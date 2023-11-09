@@ -8,7 +8,7 @@
         <v-toolbar-title>
           <span class="second-word font uppercase contrast-primary-text"
             style="font-weight:700;"
-          >matertio-test
+          >{{ projectName }}
           </span>
         </v-toolbar-title>
         <span v-if="urlPath!=null" 
@@ -21,7 +21,7 @@
         <v-spacer></v-spacer>
         <b style="margin-left:10px; font-size:10px;"
             class="contrast-primary-text"
-        > 님</b>
+        >{{username}} 님</b>
         <v-btn
             text
             class="contrast-primary-text"
@@ -60,10 +60,10 @@
                           @click="changeUrl()"
                           style="font-weight:500; font-size:20px; border:solid 2px; max-width:250px; overflow:hidden; margin-top: 10%;"
                       >
-                          
+                          {{ card.text }}
                       </v-btn>
                   </template>
-                  <span></span>
+                  <span>{{ card.text }}</span>
                 </v-tooltip>
               </v-card-actions>
             </v-card>

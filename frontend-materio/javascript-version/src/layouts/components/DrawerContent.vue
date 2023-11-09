@@ -5,7 +5,6 @@
             class="app-logo d-flex align-center gap-x-3 app-title-wrapper"
         >
             <Transition name="vertical-nav-app-title">
-                <v-icon>mdi-home</v-icon>
                 <h1 class="font-weight-semibold leading-normal text-xl text-uppercase">
                 Home
                 </h1>
